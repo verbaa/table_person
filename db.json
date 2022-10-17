@@ -1,0 +1,16 @@
+{
+  "members": [
+    {
+      "name": "Robert",
+      "about": "Lorem dsfipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+      "age": "65",
+      "id": 1
+    },
+    {
+      "name": "АВІАВІА",
+      "about": "іваіваі",
+      "age": "16",
+      "id": 4
+    }
+  ]
+}

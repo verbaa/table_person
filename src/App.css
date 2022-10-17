@@ -1,0 +1,280 @@
+.memberHome__container {
+  width: 95%;
+  margin: 50px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.memberHome__container > button {
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 0 auto;
+  background-color: hsl(210 75% 25%);
+  cursor: pointer;
+}
+
+.memberHome__container > button:hover{
+  background-color: hsl(210 75% 30%);
+}
+
+.memberHome__container > button:active{
+  background-color: hsl(210 75% 25%);
+}
+
+.memberHome__members{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.isErrorIsLoading{
+ text-align: center;
+}
+
+.addMember{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  z-index: 100;
+}
+
+.addMember input{
+  height: 40px;
+  border: unset;
+  font-size: 18px;
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing: border-box;
+  border-bottom: 1.5px solid hsl(210, 10%, 75%);
+  padding-left: 5px;
+}
+
+.addMember input:focus{
+  outline: none;
+}
+
+.addMember button {
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: hsl(210 75% 25%);
+}
+
+.addMember textarea {
+  height: 150px;
+  border-color: hsl(210, 10%, 75%);
+  padding: 5px;
+  font-size: 18px;
+}
+
+.addMember textarea:focus {
+  outline: none;
+}
+
+.addMember button:hover {
+  background-color: hsl(210 75% 30%);
+}
+
+.addMember button:active {
+  background-color: hsl(210 75% 25%);
+}
+
+.editMember{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  z-index: 100;
+}
+
+.editMember input{
+  height: 40px;
+  border: unset;
+  font-size: 18px;
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing: border-box;
+  border-bottom: 1.5px solid hsl(210, 10%, 75%);
+  padding-left: 5px;
+}
+
+.editMember input:focus{
+  outline: none;
+}
+
+.editMember button {
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: hsl(210 75% 25%);
+}
+
+.editMember textarea {
+  height: 150px;
+  border-color: hsl(210, 10%, 75%);
+  padding: 5px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.editMember textarea:focus {
+  outline: none;
+}
+
+.editMember button:hover {
+  background-color: hsl(210 75% 30%);
+}
+
+.editMember button:active {
+  background-color: hsl(210 75% 25%);
+}
+
+.member{
+  width: 100%;
+  padding: 15px 20px;
+  background-color: white;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.member--borderColor{
+  border-color: green;
+  box-shadow: 0 6px 18px -9px hsl(210, 15%, 65%);
+}
+
+.member__body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.member__body p{
+  margin: 10px 0 0 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.member__buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.member__buttons > button {
+  background-color: hsl(210 75% 25%);
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  color: white;
+}
+
+.member__buttons > button:hover {
+  background-color: hsl(210 75% 30%);
+}
+
+.member__buttons > button:active{
+  background-color: hsl(210 75% 25%);
+}
+
+.member__deleteNedit button {
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: hsl(210, 10%, 55%);
+}
+
+.member__editButton:hover {
+  color: hsl(210, 20%, 25%);
+}
+
+.member__editButton:active {
+  color: hsl(210, 10%, 55%);
+}
+
+.member__deleteNedit .member__deleteButton {
+  color: hsl(0, 80%, 80%);
+}
+
+.member__deleteButton:hover {
+  color: hsl(0, 70%, 70%);
+}
+
+.member__deleteButton:active {
+  color: hsl(0, 80%, 80%);
+}
+
+
+.modalContainer {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal{
+  width: 90%;
+  max-width: 500px;
+  border: 5px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  box-sizing: border-box;
+}
+
+.modal__head{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+.memberItem{
+  margin-top: 20px;
+}
+
+.memberItem h2{
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.memberItem p{
+  margin-top: 10px;
+  font-size: 18px;
+  max-height: 300px;
+  line-height: 25px;
+  overflow-y: auto;
+  color: hsl(210, 20%, 25%);
+}
+
